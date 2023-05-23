@@ -1,0 +1,38 @@
+.option{
+    width: 180px;
+    height: 30px;
+
+    border: none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-size: 15px;
+}
+
+.option:hover{
+    background-color: #3742fa;
+    color: white;
+}
+
+.option-selected{
+    width: 180px;
+    height: 30px;
+
+    border: none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background-color: #3742fa;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
