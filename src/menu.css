@@ -34,24 +34,40 @@
     flex-direction: row; 
 }
 
-#option-box{
-    height: 212px;
-    width: 180px;
-
-    position: absolute;
-    margin-top: 50px;
-    padding: 8px;
-
-    background-color: white;
-    border-radius: 5px;
-}
-
 #click-show:hover{
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 #click-show:focus{
     background-color: rgba(255, 255, 255, 0.7);
+}
+
+#option-box{
+    height: 212px;
+    width: 180px;
+
+    position: absolute;
+    margin-top: 50px;
+    padding: 5px;
+
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px #a7a7a7;
+}
+
+#sub-option-box {
+    height: 90px;
+    width: 100px;
+
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 80px;
+    padding: 5px;
+    z-index: 8;
+
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 2px #a7a7a7;
 }
 
 hr{

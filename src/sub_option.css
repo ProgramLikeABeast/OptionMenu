@@ -1,0 +1,23 @@
+.sub-option{
+    width: 100px;
+    height: 30px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-size: 15px;
+}
+
+.sub-option:hover, .selected{
+    background-color: #3742fa;
+    color: white;
+}
+
+button{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
