@@ -48,15 +48,16 @@ function Menu() {
             </button>
             {isMyInputFocused ?
             <div id='option-box'>
+                {/* a better option is to use map() function*/}
                 <Option name='New Tab' 
                     onClick={() => {setSelectedIndex(0);console.log(0)}}
                     onKeyDown={(event) => {keyPressHandler(event)}}
-                    className={selectedIndex===0 ? 'option-selected' : 'option'}
+                    className={selectedIndex===0 ? 'option selected' : 'option'}
                 />
                 <Option name='New Window' 
                     onClick={() => {setSelectedIndex(1);console.log(1)}}
                     onKeyDown={(event) => {keyPressHandler(event)}}
-                    className={selectedIndex===1 ? 'option-selected' : 'option'}
+                    className={selectedIndex===1 ? 'option selected' : 'option'}
                 />
 
                 <hr />
@@ -64,12 +65,13 @@ function Menu() {
                 <Option name='Favorites' 
                     onClick={() => {setSelectedIndex(2);console.log(2)}}
                     onKeyDown={(event) => {keyPressHandler(event)}}
-                    className={selectedIndex===2 ? 'option-selected' : 'option'}
+                    className={selectedIndex===2 ? 'option selected' : 'option'}
+                    hasMore={true}
                 />
                 <Option name='Downloads' 
                     onClick={() => {setSelectedIndex(3);console.log(3)}}
                     onKeyDown={(event) => {keyPressHandler(event)}}
-                    className={selectedIndex===3 ? 'option-selected' : 'option'}
+                    className={selectedIndex===3 ? 'option selected' : 'option'}
                 />
 
                 <hr />
@@ -77,12 +79,13 @@ function Menu() {
                 <Option name='Show Toolbar' 
                     onClick={() => {setSelectedIndex(4);console.log(4)}}
                     onKeyDown={(event) => {keyPressHandler(event)}}
-                    className={selectedIndex===4 ? 'option-selected' : 'option'}
+                    className={selectedIndex===4 ? 'option selected' : 'option'}
+                    isChecked={true}
                 />
                 <Option name='Show Full URLs' 
                     onClick={() => {setSelectedIndex(5);console.log(5)}}
                     onKeyDown={(event) => {keyPressHandler(event)}}
-                    className={selectedIndex===5 ? 'option-selected' : 'option'}
+                    className={selectedIndex===5 ? 'option selected' : 'option'}
                 />
             </div>
             :

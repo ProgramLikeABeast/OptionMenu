@@ -1,6 +1,6 @@
 import './App.css';
 import Menu from './menu.js'
-import background from "./image.jpg"
+import background from "./images/image.jpg"
 
 function App() {
   return (
